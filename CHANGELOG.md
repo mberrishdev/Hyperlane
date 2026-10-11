@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.4
+
+- Smoother switches on several monitors: each monitor draws in step with its own refresh rate.
+- Update checks always see the newest version, even right after a release.
+- The log records frames and the slowest frame gap per monitor for every switch.
+
 ## 0.3.3
 
 - A small release to try out updating from 0.3.2. No other changes.
