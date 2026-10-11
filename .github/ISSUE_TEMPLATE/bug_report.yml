@@ -1,0 +1,48 @@
+name: Something doesn't work
+description: A switch that doesn't animate, looks wrong, flashes, crashes, or anything else broken.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. The two things below, the `status` output and the log, usually explain the problem on their own.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you saw instead.
+      placeholder: Pressed Ctrl+Win+→ with the Cube effect. The screen went black for a moment, then showed the next desktop without any animation.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Hyperlane version
+      description: Shown in Settings › About.
+      placeholder: 0.2.0-beta.1
+    validations:
+      required: true
+  - type: textarea
+    id: status
+    attributes:
+      label: Output of `Hyperlane.exe status`
+      description: Run it in a terminal while Hyperlane is running, and paste everything it prints. It includes your Windows build, monitors and recent switch timings.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: Settings › General › Open log. Paste the last 50 lines or so, or attach the file.
+      render: text
+  - type: dropdown
+    id: effect
+    attributes:
+      label: Effect in use
+      options: [Instant, Slide, Depth, Tilt, Carousel, Fade, Zoom, Cube, Flip, Swap, Reveal, Stack, Several or all]
+  - type: textarea
+    id: setup
+    attributes:
+      label: Anything unusual about your setup
+      description: Several monitors, HDR, a rotated screen, mixed scaling, a laptop with two GPUs, other desktop or window tools running…

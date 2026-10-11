@@ -1,0 +1,16 @@
+name: Idea or request
+description: A new effect, a setting, a shortcut, or anything you'd like Hyperlane to do.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like
+      description: Describe it the way you'd use it.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What it would make easier, or what you do today instead.
