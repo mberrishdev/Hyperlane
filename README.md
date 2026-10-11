@@ -35,9 +35,6 @@ Pick **Instant** and there's no animation at all: the new desktop is simply ther
    Start menu and in **Settings › Apps › Installed apps**, starts when you sign in, and puts an
    icon in the tray.
 
-Rather not install anything? **`Hyperlane-win-Portable.zip`** runs from any folder and still
-updates itself.
-
 The installer isn't code-signed yet, so the first time Windows SmartScreen says it "protected
 your PC". Choose **More info › Run anyway**.
 
