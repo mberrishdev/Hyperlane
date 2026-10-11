@@ -29,17 +29,32 @@ Pick **Instant** and there's no animation at all: the new desktop is simply ther
 
 ## Install
 
-1. Download `Hyperlane-<version>-win-x64.exe` from the
-   [latest release](https://github.com/mberrishdev/Hyperlane/releases/latest).
-2. Run it. It's a single file with nothing to install, and puts an icon in the tray.
+1. Download **`Hyperlane-win-Setup.exe`** from the
+   [latest release](https://github.com/mberrishdev/Hyperlane/releases/latest) and run it.
+2. That's it. Hyperlane installs for your user (no administrator rights needed), appears in the
+   Start menu and in **Settings › Apps › Installed apps**, starts when you sign in, and puts an
+   icon in the tray.
 
-The executable isn't code-signed yet, so the first time Windows SmartScreen says it "protected
-your PC". Choose **More info › Run anyway**. Every release lists SHA-256 checksums.
+Rather not install anything? **`Hyperlane-win-Portable.zip`** runs from any folder and still
+updates itself.
+
+The installer isn't code-signed yet, so the first time Windows SmartScreen says it "protected
+your PC". Choose **More info › Run anyway**.
 
 **Requirements:** Windows 11 22H2 or newer, x64. On older builds Hyperlane still runs, but falls
 back to Windows' own animation, and Settings tells you so.
 
-To start it automatically, turn on **Start when I sign in** in Settings › General.
+### Updates
+
+Hyperlane checks for a new version once a day. When there is one, it shows in **Settings ›
+About** and at the top of the tray menu, with what's new. Nothing installs until you choose
+**Download and restart**, and updates download only what changed. Turn on **Get beta versions**
+to try new versions early.
+
+### Uninstall
+
+From **Settings › Apps › Installed apps**, like any other app. Your settings stay in
+`%APPDATA%\Hyperlane` in case you come back; delete that folder for a clean slate.
 
 ## Use
 
@@ -68,6 +83,7 @@ Hyperlane.exe duration 300
 Hyperlane.exe easing spring
 Hyperlane.exe pause | resume
 Hyperlane.exe status
+Hyperlane.exe update [install]
 Hyperlane.exe quit
 ```
 

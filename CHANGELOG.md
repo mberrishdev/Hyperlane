@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0
+
+- Installs like a real app: a per-user installer with a Start menu entry, an Installed apps entry with Uninstall, and start at sign-in. A portable zip is there too.
+- Updates itself: checks once a day, shows what's new in Settings › About and the tray menu, and downloads only what changed. Beta versions are opt-in.
+- `Hyperlane.exe update` and `update install` from a terminal.
+- An app icon.
+
 ## 0.2.0
 
 The first public build.
