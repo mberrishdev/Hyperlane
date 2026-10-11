@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.0-beta.1
+## 0.2.0
 
 The first public build.
 
