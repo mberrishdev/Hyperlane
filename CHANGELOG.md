@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1
+
+- A small release to try out updating from 0.3.0. No other changes.
+
 ## 0.3.0
 
 - Installs like a real app: a per-user installer with a Start menu entry, an Installed apps entry with Uninstall, and start at sign-in. A portable zip is there too.
